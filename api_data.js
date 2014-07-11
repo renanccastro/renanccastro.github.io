@@ -100,7 +100,7 @@ define({ api: [
       }
     },
     "version": "0.0.0",
-    "filename": "./facebook_user.js"
+    "filename": "agapeserver/facebook_user.js"
   },
   {
     "type": "post",
@@ -232,7 +232,7 @@ define({ api: [
       }
     },
     "version": "0.0.0",
-    "filename": "./local_user.js"
+    "filename": "agapeserver/local_user.js"
   },
   {
     "type": "post",
@@ -378,7 +378,101 @@ define({ api: [
       }
     },
     "version": "0.0.0",
-    "filename": "./local_user.js"
+    "filename": "agapeserver/local_user.js"
+  },
+  {
+    "type": "post",
+    "url": "/addprayrequest/",
+    "title": "Cadastra um pedido de oração",
+    "name": "PostAddPrayRequest",
+    "group": "Pedidos_de_oração",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "field": "Description",
+            "optional": false,
+            "description": "Descrição do pedido, ex: Orem pelas provas do Ivan."
+          },
+          {
+            "group": "Parameter",
+            "type": "DateString",
+            "field": "EstimatedEndDate",
+            "optional": false,
+            "description": "String representando a data estimada de término do pedido no formato ISO 8601."
+          },
+          {
+            "group": "Parameter",
+            "type": "Integer (0 ou 1)",
+            "field": "Anonymous",
+            "optional": false,
+            "description": "Se o pedido é anônimo ou não."
+          }
+        ]
+      }
+    },
+    "examples": [
+      {
+        "title": "Exemplo de payload para a request de um pedido NÃO ANÔNIMO:",
+        "content": "\t{\n\t\t\"Description\"\t\t: \"Orem pelas provas do Ivan\",\n\t\t\"EstimatedEndDate\" : \"2004-02-12T15:19:21+00:00\",\n\t\t\"Anonymous\"\t: 0\n\t}\n"
+      }
+    ],
+    "error": {
+      "fields": {
+        "Erro na autenticação": [
+          {
+            "group": "Erro na autenticação",
+            "field": "403",
+            "optional": false,
+            "description": "Token não é válido."
+          }
+        ],
+        "Erro no processo": [
+          {
+            "group": "Erro no processo",
+            "field": "404",
+            "optional": false,
+            "description": "Algo falhou."
+          }
+        ]
+      }
+    },
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "field": "token",
+            "optional": false,
+            "description": "Token emitido pelo server na hora do login do usuário."
+          },
+          {
+            "group": "Header",
+            "type": "String",
+            "field": "Content-Type",
+            "optional": false,
+            "description": "application/json."
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Sucesso": [
+          {
+            "group": "Sucesso",
+            "field": "200",
+            "optional": false,
+            "description": "Adicionado com sucesso."
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "agapeserver/pray_request.js"
   },
   {
     "type": "post",
@@ -421,6 +515,14 @@ define({ api: [
             "optional": false,
             "description": "Token não é válido."
           }
+        ],
+        "Erro no processo": [
+          {
+            "group": "Erro no processo",
+            "field": "404",
+            "optional": false,
+            "description": "Algo falhou."
+          }
         ]
       }
     },
@@ -446,47 +548,18 @@ define({ api: [
     },
     "success": {
       "fields": {
-        "Sucesso - 200": [
+        "Sucesso": [
           {
-            "group": "Sucesso - 200",
-            "type": "String",
-            "field": "_id",
+            "group": "Sucesso",
+            "field": "200",
             "optional": false,
-            "description": "id do versículo."
-          },
-          {
-            "group": "Sucesso - 200",
-            "type": "String",
-            "field": "author",
-            "optional": false,
-            "description": "id do criador do versículo."
-          },
-          {
-            "group": "Sucesso - 200",
-            "type": "Date",
-            "field": "CreationDate",
-            "optional": false,
-            "description": "Data de criação do versículo."
-          },
-          {
-            "group": "Sucesso - 200",
-            "type": "String[]",
-            "field": "SharedWith",
-            "optional": false,
-            "description": "Array de ids de usuários com quais o versículo foi compartilhado."
-          },
-          {
-            "group": "Sucesso - 200",
-            "type": "int",
-            "field": "SharedWithLength",
-            "optional": false,
-            "description": "Tamanho da propriedade anterior."
+            "description": "Adicionado com sucesso."
           }
         ]
       }
     },
     "version": "0.0.0",
-    "filename": "./verse.js"
+    "filename": "agapeserver/verse.js"
   },
   {
     "type": "get",
@@ -504,6 +577,14 @@ define({ api: [
             "optional": false,
             "description": "Token não é válido."
           }
+        ],
+        "Erro no processo": [
+          {
+            "group": "Erro no processo",
+            "field": "404",
+            "optional": false,
+            "description": "Algo falhou."
+          }
         ]
       }
     },
@@ -540,7 +621,7 @@ define({ api: [
           {
             "group": "Sucesso - 200",
             "type": "String",
-            "field": "author",
+            "field": "Author",
             "optional": false,
             "description": "id do criador do versículo."
           },
@@ -569,7 +650,7 @@ define({ api: [
       }
     },
     "version": "0.0.0",
-    "filename": "./verse.js"
+    "filename": "agapeserver/verse.js"
   },
   {
     "success": {
@@ -673,7 +754,7 @@ define({ api: [
     "type": "",
     "url": "",
     "version": "0.0.0",
-    "filename": "./local_user.js"
+    "filename": "agapeserver/local_user.js"
   },
   {
     "error": {
@@ -700,34 +781,7 @@ define({ api: [
     "type": "",
     "url": "",
     "version": "0.0.0",
-    "filename": "./local_user.js"
-  },
-  {
-    "header": {
-      "fields": {
-        "Header": [
-          {
-            "group": "Header",
-            "type": "String",
-            "field": "token",
-            "optional": false,
-            "description": "Token emitido pelo server na hora do login do usuário."
-          },
-          {
-            "group": "Header",
-            "type": "String",
-            "field": "Content-Type",
-            "optional": false,
-            "description": "application/json."
-          }
-        ]
-      }
-    },
-    "group": "verse.js",
-    "type": "",
-    "url": "",
-    "version": "0.0.0",
-    "filename": "./verse.js"
+    "filename": "agapeserver/local_user.js"
   },
   {
     "error": {
@@ -739,6 +793,14 @@ define({ api: [
             "optional": false,
             "description": "Token não é válido."
           }
+        ],
+        "Erro no processo": [
+          {
+            "group": "Erro no processo",
+            "field": "404",
+            "optional": false,
+            "description": "Algo falhou."
+          }
         ]
       }
     },
@@ -746,7 +808,26 @@ define({ api: [
     "type": "",
     "url": "",
     "version": "0.0.0",
-    "filename": "./verse.js"
+    "filename": "agapeserver/verse.js"
+  },
+  {
+    "success": {
+      "fields": {
+        "Sucesso": [
+          {
+            "group": "Sucesso",
+            "field": "200",
+            "optional": false,
+            "description": "Adicionado com sucesso."
+          }
+        ]
+      }
+    },
+    "group": "verse.js",
+    "type": "",
+    "url": "",
+    "version": "0.0.0",
+    "filename": "agapeserver/verse.js"
   },
   {
     "success": {
@@ -762,7 +843,7 @@ define({ api: [
           {
             "group": "Sucesso - 200",
             "type": "String",
-            "field": "author",
+            "field": "Author",
             "optional": false,
             "description": "id do criador do versículo."
           },
@@ -794,6 +875,33 @@ define({ api: [
     "type": "",
     "url": "",
     "version": "0.0.0",
-    "filename": "./verse.js"
+    "filename": "agapeserver/verse.js"
+  },
+  {
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "field": "token",
+            "optional": false,
+            "description": "Token emitido pelo server na hora do login do usuário."
+          },
+          {
+            "group": "Header",
+            "type": "String",
+            "field": "Content-Type",
+            "optional": false,
+            "description": "application/json."
+          }
+        ]
+      }
+    },
+    "group": "verse.js",
+    "type": "",
+    "url": "",
+    "version": "0.0.0",
+    "filename": "agapeserver/verse.js"
   }
 ] });
