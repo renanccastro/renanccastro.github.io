@@ -13,14 +13,14 @@
             "type": "String",
             "field": "accesstoken",
             "optional": false,
-            "description": "Facebook accesstoken do usuário."
+            "description": "<p>Facebook accesstoken do usuário.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "facebookuserid",
             "optional": false,
-            "description": "User id do usuário no facebook."
+            "description": "<p>User id do usuário no facebook.</p>"
           }
         ]
       }
@@ -40,49 +40,49 @@
             "type": "String",
             "field": "profile._id",
             "optional": false,
-            "description": "id do usuário."
+            "description": "<p>id do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "profile.name",
             "optional": false,
-            "description": "Nome do usuário."
+            "description": "<p>Nome do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "profile.email",
             "optional": false,
-            "description": "Email do usuário."
+            "description": "<p>Email do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "profile.gender",
             "optional": false,
-            "description": "Sexo do usuário."
+            "description": "<p>Sexo do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "Date",
             "field": "profile.birthday",
             "optional": false,
-            "description": "Data de nascimento do usuário."
+            "description": "<p>Data de nascimento do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "created_now",
             "optional": false,
-            "description": "YES/NO"
+            "description": "<p>YES/NO</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "token",
             "optional": false,
-            "description": "O token do servidor para ser usado na autenticação"
+            "description": "<p>O token do servidor para ser usado na autenticação</p>"
           }
         ]
       }
@@ -94,7 +94,7 @@
             "group": "403 - Erro na autenticação",
             "field": "403",
             "optional": false,
-            "description": "Falha na autenticação do facebook token."
+            "description": "<p>Falha na autenticação do facebook token.</p>"
           }
         ]
       }
@@ -116,70 +116,70 @@
             "type": "String",
             "field": "username",
             "optional": false,
-            "description": "Username do usuário."
+            "description": "<p>Username do usuário.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "password",
             "optional": false,
-            "description": "SHA1 hash da senha do usuário."
+            "description": "<p>SHA1 hash da senha do usuário.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "name",
             "optional": false,
-            "description": "Nome do usuário."
+            "description": "<p>Nome do usuário.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "email",
             "optional": false,
-            "description": "Email do usuário."
+            "description": "<p>Email do usuário.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "gender",
             "optional": false,
-            "description": "Sexo do usuário."
+            "description": "<p>Sexo do usuário.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "birthday",
             "optional": false,
-            "description": "Data de criação do versículo."
+            "description": "<p>Data de criação do versículo.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "denominationID",
             "optional": false,
-            "description": "ID da denominação do usuário."
+            "description": "<p>ID da denominação do usuário.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "state",
             "optional": false,
-            "description": "Estado(localização) do usuário."
+            "description": "<p>Estado(localização) do usuário.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "city",
             "optional": false,
-            "description": "Cidade(localização) do usuário."
+            "description": "<p>Cidade(localização) do usuário.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "country",
             "optional": false,
-            "description": "País(localização) do usuário."
+            "description": "<p>País(localização) do usuário.</p>"
           }
         ]
       }
@@ -199,14 +199,14 @@
             "type": "String",
             "field": "message._id",
             "optional": false,
-            "description": "id do usuário."
+            "description": "<p>id do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "status",
             "optional": false,
-            "description": "ok"
+            "description": "<p>ok</p>"
           }
         ]
       }
@@ -219,14 +219,14 @@
             "type": "String",
             "field": "message",
             "optional": false,
-            "description": "Usuário já existe"
+            "description": "<p>Usuário já existe</p>"
           },
           {
             "group": "Erro na autenticação",
             "type": "String",
             "field": "status",
             "optional": false,
-            "description": "failed"
+            "description": "<p>failed</p>"
           }
         ]
       }
@@ -248,14 +248,14 @@
             "type": "String",
             "field": "username",
             "optional": false,
-            "description": "Username do usuário."
+            "description": "<p>Username do usuário.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "password",
             "optional": false,
-            "description": "SHA1 hash da senha do usuário."
+            "description": "<p>SHA1 hash da senha do usuário.</p>"
           }
         ]
       }
@@ -268,14 +268,14 @@
             "type": "String",
             "field": "message",
             "optional": false,
-            "description": "Senha inválida/Usuário não encontrado"
+            "description": "<p>Senha inválida/Usuário não encontrado</p>"
           },
           {
             "group": "Erro na autenticação",
             "type": "String",
             "field": "status",
             "optional": false,
-            "description": "failed"
+            "description": "<p>failed</p>"
           }
         ]
       }
@@ -295,90 +295,202 @@
             "type": "String",
             "field": "message._id",
             "optional": false,
-            "description": "id do usuário."
+            "description": "<p>id do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "message.password",
             "optional": false,
-            "description": "SHA1 hash da senha do usuário."
+            "description": "<p>SHA1 hash da senha do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "message.name",
             "optional": false,
-            "description": "Nome do usuário."
+            "description": "<p>Nome do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "message.email",
             "optional": false,
-            "description": "Email do usuário."
+            "description": "<p>Email do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "message.gender",
             "optional": false,
-            "description": "Sexo do usuário."
+            "description": "<p>Sexo do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "Date",
             "field": "message.birthday",
             "optional": false,
-            "description": "Data de nascimento do usuário."
+            "description": "<p>Data de nascimento do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "message.denominationID",
             "optional": false,
-            "description": "ID da denominação do usuário."
+            "description": "<p>ID da denominação do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "message.state",
             "optional": false,
-            "description": "Estado(localização) do usuário."
+            "description": "<p>Estado(localização) do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "message.city",
             "optional": false,
-            "description": "Cidade(localização) do usuário."
+            "description": "<p>Cidade(localização) do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "message.country",
             "optional": false,
-            "description": "País(localização) do usuário."
+            "description": "<p>País(localização) do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "status",
             "optional": false,
-            "description": "ok"
+            "description": "<p>ok</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "token",
             "optional": false,
-            "description": "O token do servidor para ser usado na autenticação"
+            "description": "<p>O token do servidor para ser usado na autenticação</p>"
           }
         ]
       }
     },
     "version": "0.0.0",
     "filename": "agapeserver/local_user.js"
+  },
+  {
+    "type": "get",
+    "url": "/getprayrequest/",
+    "title": "Pegar pedido de oração",
+    "name": "GetPrayRequest",
+    "group": "Pedidos_de_oração",
+    "description": "<p>Pega um pedido aleatório no banco de versículos utilizando a seguinte estratégia:    De todos os pedidos que não foi o usuário que criou e que ele ainda não pegou:        Pega os que tem menor SharedWithLength.           Persistindo o empate, pega por CreationDate(menor).</p>",
+    "error": {
+      "fields": {
+        "Erro na autenticação": [
+          {
+            "group": "Erro na autenticação",
+            "field": "403",
+            "optional": false,
+            "description": "<p>Token não é válido.</p>"
+          }
+        ],
+        "Erro no processo": [
+          {
+            "group": "Erro no processo",
+            "field": "404",
+            "optional": false,
+            "description": "<p>Algo falhou.</p>"
+          }
+        ]
+      }
+    },
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "field": "token",
+            "optional": false,
+            "description": "<p>Token emitido pelo server na hora do login do usuário.</p>"
+          },
+          {
+            "group": "Header",
+            "type": "String",
+            "field": "Content-Type",
+            "optional": false,
+            "description": "<p>application/json.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Sucesso - 200": [
+          {
+            "group": "Sucesso - 200",
+            "type": "String",
+            "field": "_id",
+            "optional": false,
+            "description": "<p>id do versículo.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "String",
+            "field": "Description",
+            "optional": false,
+            "description": "<p>descrição do pedido.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "DateString",
+            "field": "EstimatedEndDate",
+            "optional": false,
+            "description": "<p>data estimada de término.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "int",
+            "field": "Anonymous",
+            "optional": false,
+            "description": "<p>0/1 para pedidos anônimos.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "String",
+            "field": "Author",
+            "optional": false,
+            "description": "<p>id do criador do versículo.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "DateString",
+            "field": "CreationDate",
+            "optional": false,
+            "description": "<p>Data de criação do versículo.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "String[]",
+            "field": "SharedWith",
+            "optional": false,
+            "description": "<p>Array de ids de usuários com quais o versículo foi compartilhado.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "int",
+            "field": "SharedWithLength",
+            "optional": false,
+            "description": "<p>Tamanho da propriedade anterior.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "agapeserver/pray_request.js"
   },
   {
     "type": "post",
@@ -394,21 +506,21 @@
             "type": "String",
             "field": "Description",
             "optional": false,
-            "description": "Descrição do pedido, ex: Orem pelas provas do Ivan."
+            "description": "<p>Descrição do pedido, ex: Orem pelas provas do Ivan.</p>"
           },
           {
             "group": "Parameter",
             "type": "DateString",
             "field": "EstimatedEndDate",
             "optional": false,
-            "description": "String representando a data estimada de término do pedido no formato ISO 8601."
+            "description": "<p>String representando a data estimada de término do pedido no formato ISO 8601.</p>"
           },
           {
             "group": "Parameter",
             "type": "Integer (0 ou 1)",
             "field": "Anonymous",
             "optional": false,
-            "description": "Se o pedido é anônimo ou não."
+            "description": "<p>Se o pedido é anônimo ou não.</p>"
           }
         ]
       }
@@ -426,7 +538,7 @@
             "group": "Erro na autenticação",
             "field": "403",
             "optional": false,
-            "description": "Token não é válido."
+            "description": "<p>Token não é válido.</p>"
           }
         ],
         "Erro no processo": [
@@ -434,7 +546,7 @@
             "group": "Erro no processo",
             "field": "404",
             "optional": false,
-            "description": "Algo falhou."
+            "description": "<p>Algo falhou.</p>"
           }
         ]
       }
@@ -447,26 +559,76 @@
             "type": "String",
             "field": "token",
             "optional": false,
-            "description": "Token emitido pelo server na hora do login do usuário."
+            "description": "<p>Token emitido pelo server na hora do login do usuário.</p>"
           },
           {
             "group": "Header",
             "type": "String",
             "field": "Content-Type",
             "optional": false,
-            "description": "application/json."
+            "description": "<p>application/json.</p>"
           }
         ]
       }
     },
     "success": {
       "fields": {
-        "Sucesso": [
+        "Sucesso - 200": [
           {
-            "group": "Sucesso",
-            "field": "200",
+            "group": "Sucesso - 200",
+            "type": "String",
+            "field": "_id",
             "optional": false,
-            "description": "Adicionado com sucesso."
+            "description": "<p>id do versículo.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "String",
+            "field": "Description",
+            "optional": false,
+            "description": "<p>descrição do pedido.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "DateString",
+            "field": "EstimatedEndDate",
+            "optional": false,
+            "description": "<p>data estimada de término.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "int",
+            "field": "Anonymous",
+            "optional": false,
+            "description": "<p>0/1 para pedidos anônimos.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "String",
+            "field": "Author",
+            "optional": false,
+            "description": "<p>id do criador do versículo.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "DateString",
+            "field": "CreationDate",
+            "optional": false,
+            "description": "<p>Data de criação do versículo.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "String[]",
+            "field": "SharedWith",
+            "optional": false,
+            "description": "<p>Array de ids de usuários com quais o versículo foi compartilhado.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "int",
+            "field": "SharedWithLength",
+            "optional": false,
+            "description": "<p>Tamanho da propriedade anterior.</p>"
           }
         ]
       }
@@ -488,14 +650,14 @@
             "type": "String",
             "field": "Reference",
             "optional": false,
-            "description": "Referência da bíblia, ex: \"João 5:23-25\"."
+            "description": "<p>Referência da bíblia, ex: &quot;João 5:23-25&quot;.</p>"
           },
           {
             "group": "Parameter",
             "type": "String",
             "field": "Comment",
             "optional": false,
-            "description": "Comentário do versículo."
+            "description": "<p>Comentário do versículo.</p>"
           }
         ]
       }
@@ -513,7 +675,7 @@
             "group": "Erro na autenticação",
             "field": "403",
             "optional": false,
-            "description": "Token não é válido."
+            "description": "<p>Token não é válido.</p>"
           }
         ],
         "Erro no processo": [
@@ -521,7 +683,7 @@
             "group": "Erro no processo",
             "field": "404",
             "optional": false,
-            "description": "Algo falhou."
+            "description": "<p>Algo falhou.</p>"
           }
         ]
       }
@@ -534,26 +696,69 @@
             "type": "String",
             "field": "token",
             "optional": false,
-            "description": "Token emitido pelo server na hora do login do usuário."
+            "description": "<p>Token emitido pelo server na hora do login do usuário.</p>"
           },
           {
             "group": "Header",
             "type": "String",
             "field": "Content-Type",
             "optional": false,
-            "description": "application/json."
+            "description": "<p>application/json.</p>"
           }
         ]
       }
     },
     "success": {
       "fields": {
-        "Sucesso": [
+        "Sucesso - 200": [
           {
-            "group": "Sucesso",
-            "field": "200",
+            "group": "Sucesso - 200",
+            "type": "String",
+            "field": "_id",
             "optional": false,
-            "description": "Adicionado com sucesso."
+            "description": "<p>id do versículo.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "String",
+            "field": "Comment",
+            "optional": false,
+            "description": "<p>Comentário.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "String",
+            "field": "Reference",
+            "optional": false,
+            "description": "<p>Referência na bíblia.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "String",
+            "field": "Author",
+            "optional": false,
+            "description": "<p>id do criador do versículo.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "DateString",
+            "field": "CreationDate",
+            "optional": false,
+            "description": "<p>Data de criação do versículo.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "String[]",
+            "field": "SharedWith",
+            "optional": false,
+            "description": "<p>Array de ids de usuários com quais o versículo foi compartilhado.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "int",
+            "field": "SharedWithLength",
+            "optional": false,
+            "description": "<p>Tamanho da propriedade anterior.</p>"
           }
         ]
       }
@@ -567,7 +772,7 @@
     "title": "Pegar versículo",
     "name": "PostGetVerse",
     "group": "Versículos",
-    "description": "Pega um versículo aleatório no banco de versículos utilizando a seguinte estratégia:\n\t>\tDe todos os versículos que não foi o usuário que criou e que ele ainda não pegou:\n\t   >\tPega os que tem menor SharedWithLength.\n\t   >\tPersistindo o empate, pega por CreationDate(menor).",
+    "description": "<p>Pega um versículo aleatório no banco de versículos utilizando a seguinte estratégia:    De todos os versículos que não foi o usuário que criou e que ele ainda não pegou:        Pega os que tem menor SharedWithLength.        Persistindo o empate, pega por CreationDate(menor).</p>",
     "error": {
       "fields": {
         "Erro na autenticação": [
@@ -575,7 +780,7 @@
             "group": "Erro na autenticação",
             "field": "403",
             "optional": false,
-            "description": "Token não é válido."
+            "description": "<p>Token não é válido.</p>"
           }
         ],
         "Erro no processo": [
@@ -583,7 +788,7 @@
             "group": "Erro no processo",
             "field": "404",
             "optional": false,
-            "description": "Algo falhou."
+            "description": "<p>Algo falhou.</p>"
           }
         ]
       }
@@ -596,14 +801,14 @@
             "type": "String",
             "field": "token",
             "optional": false,
-            "description": "Token emitido pelo server na hora do login do usuário."
+            "description": "<p>Token emitido pelo server na hora do login do usuário.</p>"
           },
           {
             "group": "Header",
             "type": "String",
             "field": "Content-Type",
             "optional": false,
-            "description": "application/json."
+            "description": "<p>application/json.</p>"
           }
         ]
       }
@@ -616,41 +821,82 @@
             "type": "String",
             "field": "_id",
             "optional": false,
-            "description": "id do versículo."
+            "description": "<p>id do versículo.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "String",
+            "field": "Comment",
+            "optional": false,
+            "description": "<p>Comentário.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "String",
+            "field": "Reference",
+            "optional": false,
+            "description": "<p>Referência na bíblia.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "Author",
             "optional": false,
-            "description": "id do criador do versículo."
+            "description": "<p>id do criador do versículo.</p>"
           },
           {
             "group": "Sucesso - 200",
-            "type": "Date",
+            "type": "DateString",
             "field": "CreationDate",
             "optional": false,
-            "description": "Data de criação do versículo."
+            "description": "<p>Data de criação do versículo.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String[]",
             "field": "SharedWith",
             "optional": false,
-            "description": "Array de ids de usuários com quais o versículo foi compartilhado."
+            "description": "<p>Array de ids de usuários com quais o versículo foi compartilhado.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "int",
             "field": "SharedWithLength",
             "optional": false,
-            "description": "Tamanho da propriedade anterior."
+            "description": "<p>Tamanho da propriedade anterior.</p>"
           }
         ]
       }
     },
     "version": "0.0.0",
     "filename": "agapeserver/verse.js"
+  },
+  {
+    "error": {
+      "fields": {
+        "Erro na autenticação": [
+          {
+            "group": "Erro na autenticação",
+            "type": "String",
+            "field": "message",
+            "optional": false,
+            "description": "<p>Senha inválida/Usuário não encontrado</p>"
+          },
+          {
+            "group": "Erro na autenticação",
+            "type": "String",
+            "field": "status",
+            "optional": false,
+            "description": "<p>failed</p>"
+          }
+        ]
+      }
+    },
+    "group": "local_user.js",
+    "type": "",
+    "url": "",
+    "version": "0.0.0",
+    "filename": "agapeserver/local_user.js"
   },
   {
     "success": {
@@ -668,84 +914,84 @@
             "type": "String",
             "field": "message._id",
             "optional": false,
-            "description": "id do usuário."
+            "description": "<p>id do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "message.password",
             "optional": false,
-            "description": "SHA1 hash da senha do usuário."
+            "description": "<p>SHA1 hash da senha do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "message.name",
             "optional": false,
-            "description": "Nome do usuário."
+            "description": "<p>Nome do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "message.email",
             "optional": false,
-            "description": "Email do usuário."
+            "description": "<p>Email do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "message.gender",
             "optional": false,
-            "description": "Sexo do usuário."
+            "description": "<p>Sexo do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "Date",
             "field": "message.birthday",
             "optional": false,
-            "description": "Data de nascimento do usuário."
+            "description": "<p>Data de nascimento do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "message.denominationID",
             "optional": false,
-            "description": "ID da denominação do usuário."
+            "description": "<p>ID da denominação do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "message.state",
             "optional": false,
-            "description": "Estado(localização) do usuário."
+            "description": "<p>Estado(localização) do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "message.city",
             "optional": false,
-            "description": "Cidade(localização) do usuário."
+            "description": "<p>Cidade(localização) do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "message.country",
             "optional": false,
-            "description": "País(localização) do usuário."
+            "description": "<p>País(localização) do usuário.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "status",
             "optional": false,
-            "description": "ok"
+            "description": "<p>ok</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "token",
             "optional": false,
-            "description": "O token do servidor para ser usado na autenticação"
+            "description": "<p>O token do servidor para ser usado na autenticação</p>"
           }
         ]
       }
@@ -757,31 +1003,100 @@
     "filename": "agapeserver/local_user.js"
   },
   {
-    "error": {
+    "success": {
       "fields": {
-        "Erro na autenticação": [
+        "Sucesso - 200": [
           {
-            "group": "Erro na autenticação",
+            "group": "Sucesso - 200",
             "type": "String",
-            "field": "message",
+            "field": "_id",
             "optional": false,
-            "description": "Senha inválida/Usuário não encontrado"
+            "description": "<p>id do versículo.</p>"
           },
           {
-            "group": "Erro na autenticação",
+            "group": "Sucesso - 200",
             "type": "String",
-            "field": "status",
+            "field": "Description",
             "optional": false,
-            "description": "failed"
+            "description": "<p>descrição do pedido.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "DateString",
+            "field": "EstimatedEndDate",
+            "optional": false,
+            "description": "<p>data estimada de término.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "int",
+            "field": "Anonymous",
+            "optional": false,
+            "description": "<p>0/1 para pedidos anônimos.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "String",
+            "field": "Author",
+            "optional": false,
+            "description": "<p>id do criador do versículo.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "DateString",
+            "field": "CreationDate",
+            "optional": false,
+            "description": "<p>Data de criação do versículo.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "String[]",
+            "field": "SharedWith",
+            "optional": false,
+            "description": "<p>Array de ids de usuários com quais o versículo foi compartilhado.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "int",
+            "field": "SharedWithLength",
+            "optional": false,
+            "description": "<p>Tamanho da propriedade anterior.</p>"
           }
         ]
       }
     },
-    "group": "local_user.js",
+    "group": "pray_request.js",
     "type": "",
     "url": "",
     "version": "0.0.0",
-    "filename": "agapeserver/local_user.js"
+    "filename": "agapeserver/pray_request.js"
+  },
+  {
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "field": "token",
+            "optional": false,
+            "description": "<p>Token emitido pelo server na hora do login do usuário.</p>"
+          },
+          {
+            "group": "Header",
+            "type": "String",
+            "field": "Content-Type",
+            "optional": false,
+            "description": "<p>application/json.</p>"
+          }
+        ]
+      }
+    },
+    "group": "verse.js",
+    "type": "",
+    "url": "",
+    "version": "0.0.0",
+    "filename": "agapeserver/verse.js"
   },
   {
     "error": {
@@ -791,7 +1106,7 @@
             "group": "Erro na autenticação",
             "field": "403",
             "optional": false,
-            "description": "Token não é válido."
+            "description": "<p>Token não é válido.</p>"
           }
         ],
         "Erro no processo": [
@@ -799,7 +1114,7 @@
             "group": "Erro no processo",
             "field": "404",
             "optional": false,
-            "description": "Algo falhou."
+            "description": "<p>Algo falhou.</p>"
           }
         ]
       }
@@ -818,7 +1133,7 @@
             "group": "Sucesso",
             "field": "200",
             "optional": false,
-            "description": "Adicionado com sucesso."
+            "description": "<p>Adicionado com sucesso.</p>"
           }
         ]
       }
@@ -838,62 +1153,49 @@
             "type": "String",
             "field": "_id",
             "optional": false,
-            "description": "id do versículo."
+            "description": "<p>id do versículo.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "String",
+            "field": "Comment",
+            "optional": false,
+            "description": "<p>Comentário.</p>"
+          },
+          {
+            "group": "Sucesso - 200",
+            "type": "String",
+            "field": "Reference",
+            "optional": false,
+            "description": "<p>Referência na bíblia.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String",
             "field": "Author",
             "optional": false,
-            "description": "id do criador do versículo."
+            "description": "<p>id do criador do versículo.</p>"
           },
           {
             "group": "Sucesso - 200",
-            "type": "Date",
+            "type": "DateString",
             "field": "CreationDate",
             "optional": false,
-            "description": "Data de criação do versículo."
+            "description": "<p>Data de criação do versículo.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "String[]",
             "field": "SharedWith",
             "optional": false,
-            "description": "Array de ids de usuários com quais o versículo foi compartilhado."
+            "description": "<p>Array de ids de usuários com quais o versículo foi compartilhado.</p>"
           },
           {
             "group": "Sucesso - 200",
             "type": "int",
             "field": "SharedWithLength",
             "optional": false,
-            "description": "Tamanho da propriedade anterior."
-          }
-        ]
-      }
-    },
-    "group": "verse.js",
-    "type": "",
-    "url": "",
-    "version": "0.0.0",
-    "filename": "agapeserver/verse.js"
-  },
-  {
-    "header": {
-      "fields": {
-        "Header": [
-          {
-            "group": "Header",
-            "type": "String",
-            "field": "token",
-            "optional": false,
-            "description": "Token emitido pelo server na hora do login do usuário."
-          },
-          {
-            "group": "Header",
-            "type": "String",
-            "field": "Content-Type",
-            "optional": false,
-            "description": "application/json."
+            "description": "<p>Tamanho da propriedade anterior.</p>"
           }
         ]
       }

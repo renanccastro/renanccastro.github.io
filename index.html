@@ -34,6 +34,7 @@
     <h1>{{name}}</h1>
     {{#if description}}<h2>{{{nl2br description}}}</h2>{{/if}}
   </div>
+  {{#if template.withCompare}}
   <div class="pull-right">
     <div class="btn-group">
       <button id="version" class="btn btn-large dropdown-toggle" data-toggle="dropdown">
@@ -49,6 +50,7 @@
       </ul>
     </div>
   </div>
+  {{/if}}
   <div class="clearfix"></div>
 </script>
 
@@ -65,8 +67,12 @@
 </script>
 
 <script id="template-generator" type="text/x-handlebars-template">
-  {{#if generator}}
-    {{__ "Generated with"}} <a href="http://apidocjs.com">apiDoc</a> {{{generator.version}}} - {{{generator.time}}}
+  {{#if template.withGenerator}}
+    {{#if generator}}
+      <div class="content">
+        {{__ "Generated with"}} <a href="http://apidocjs.com">apiDoc</a> {{{generator.version}}} - {{{generator.time}}}
+      </div>
+    {{/if}}
   {{/if}}
 </script>
 
@@ -89,6 +95,7 @@
     <div class="pull-left">
       <h1>{{underscoreToSpace article.group}} - {{article.title}}</h1>
     </div>
+    {{#if template.withCompare}}
     <div class="pull-right">
       <div class="btn-group">
         <button class="version btn dropdown-toggle" data-toggle="dropdown">
@@ -102,6 +109,7 @@
         </ul>
       </div>
     </div>
+    {{/if}}
     <div class="clearfix"></div>
 
     {{#if article.description}}
@@ -469,6 +477,21 @@
       <div id="footer"></div>
       <div id="generator"></div>
     </div>
+  </div>
+</div>
+
+<div id="loader">
+  <div class="spinner">
+	  <div class="spinner-container container1">
+	    <div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div>
+	  </div>
+	  <div class="spinner-container container2">
+	    <div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div>
+	  </div>
+	  <div class="spinner-container container3">
+	    <div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div>
+    </div>
+    <p>Loading...</p>
   </div>
 </div>
 
